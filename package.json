@@ -1,0 +1,15 @@
+{
+  "name": "socket-io-learning",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Nicolas <walcker_@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node src/server.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.6.2"
+  }
+}
