@@ -1,0 +1,152 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 3rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 350px;
+  width: 350px;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 0.75rem;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form__control__input {
+  border: none;
+  padding: 0 1rem;
+  flex-grow: 1;
+  border-radius: 2rem;
+  margin: 0.25rem;
+  min-height: 25px;
+  width: 100%;
+  padding: 0.5rem;
+}
+.form__control__input:focus {
+  outline: none;
+}
+
+.form__select {
+  width: 100%;
+  min-height: 25px;
+  border-radius: 15px;
+  background: #3b3b3b;
+  border: none;
+  padding: 0.5rem;
+}
+
+.form__submit {
+  background-color: #3b3b3b;
+  border: none;
+  padding: 0 1rem;
+  border-radius: 15px;
+  outline: none;
+  color: #fff;
+  width: 100%;
+  min-height: 25px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background 200ms ease;
+}
+
+.form__submit:hover,
+.header__logout:hover {
+  background: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 3rem;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 0.75rem;
+}
+
+.header__logout {
+  background: #3b3b3b;
+  border: none;
+  padding: 0 1rem;
+  border-radius: 3px;
+  outline: none;
+  color: #fff;
+  height: 100%;
+  transition: background 200ms ease;
+  cursor: pointer;
+}
+
+.send-message {
+  background: rgba(0, 0, 0, 0.15);
+  padding: 0.25rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 3rem;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+}
+
+.send-message__submit {
+  background: #333;
+  border: none;
+  padding: 0 1rem;
+  border-radius: 3px;
+  outline: none;
+  color: #fff;
+}
+
+.send-message__input {
+  border: none;
+  padding: 0 1rem;
+  flex-grow: 1;
+  border-radius: 2rem;
+  margin: 0.25rem;
+}
+.send-message__input:focus {
+  outline: none;
+}
+
+.messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.messages > li {
+  padding: 0.5rem 1rem;
+}
+.messages > li:nth-child(odd) {
+  background: #efefef;
+}

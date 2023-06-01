@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Socket IO - Index</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="app">
+    <form class="form" action="chat.html">
+      <select class="form__select" name="select-room" id="select-room">
+        <option value="-1">Selecione a sala</option>
+        <option value="vue">Vue</option>
+        <option value="reactjs">ReactJS</option>
+        <option value="angular">Angular</option>
+        <option value="outros">Outros</option>
+      </select>
+      <div class="form__control">
+        <label for="username" class="form__control__label">Digite o seu nome de usuario:</label>
+        <input type="text" name="username" id="username input" class="form__control__input">
+      </div>
+      <button type="submit" class="form__submit">Entrar</button>
+    </form>
+  </div>
+  <script type="module" src="/main.js"></script>
+  <script src="./src/chat.js"></script>
+</body>
+
+</html>
