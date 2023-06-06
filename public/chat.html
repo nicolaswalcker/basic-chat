@@ -10,13 +10,20 @@
 </head>
 
 <body>
-  <header class="header"><button class="header__logout">Sair</button></header>
-  <ul class="messages"></ul>
-  <form class="send-message" id="form" action="">
-    <input class="send-message__input" autocomplete="off" /><button class="send-message__submit">Enviar</button>
-  </form>
-
-  <script type="module" src="/main.js"></script>
+  <header class="header">
+    Ola <span id="chat_username"></span> - Sala <span id="chat_room"></span>
+    <button id="chat_logout" class="header__logout">Sair</button>
+  </header>
+  <ul id="messages" class="messages"></ul>
+  <div class="send-message">
+    <input class="send-message__input" id="message_input" autocomplete="off" /><button class="send-message__submit"
+      id="message_submit">Enviar</button>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.8/dayjs.min.js"
+    integrity="sha512-af90l7+r/ujCury3kqomcoZ4aNuC4JP0xUUU682bqlRCLLvGJrc9L82zONFccLWmxcMXSqO9d6C7Rr39EkbT3Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="chat.js"></script>
 </body>
 
 </html>

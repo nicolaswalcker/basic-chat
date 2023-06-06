@@ -142,10 +142,15 @@ body {
 .messages {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 1rem;
 }
 .messages > li {
   padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: black;
+  border-radius: 15px;
 }
 .messages > li:nth-child(odd) {
   background: #efefef;
